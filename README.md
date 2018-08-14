@@ -7,7 +7,7 @@ I want to publish this proxy to users: "server=s1.mymtproto.com&port=4780&secret
 I propose telegram add this new proxy links mechanism. This will have to work **just on official apps**.
 telegram in it's app uses some crypt method to:
 ```javascript
-// this is a asymmetric encryption algorithm , proxy owenr call this via an offical botfficials has this key, it just 
+// this is a asymmetric (or symmetric) encryption algorithm , just offical clients has this key 
 function proxyLinkToObscureurl('server=s1.mymtproto.com...', TELEGRAM_OFFICIAL_BUILD_KEY){
   give correct answer in official apps only
  ...
@@ -41,4 +41,4 @@ the whole point of secret urls is not get real proxy server address ,third party
 because this address report very fast and they get blocked within hours. with this mechanisms it is very hard for government to find this address, and in most cases scene impossible to find all this proxies.
 
 **why not wait for TON proxy?**
-this mechanism is very simple for telegram to implement, what i have described in here is just an **effective technique, not a whole new technology**, it is just big improvement.
+this mechanism is very simple for telegram to implement, what i have described in here is just an _**effective technique, not a whole new technology, it is just big improvement that lower the ratio of blocking proxy links significantly, and make this proxies much more effective.**_
